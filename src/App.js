@@ -1,25 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import HouseInput from './components/form';
+import ViewTable from './components/table';
 
 function App() {
+
+  //   function addHouse(newHouseData){
+  //     const newHouse = {id: nextId++, ...newHouseData}
+
+  //     setHouseList(houseList.concat(newHouse));
+  // }   Trying to add a new house to the house list
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HouseInput /*onSubmint={addHouse}*//>
+      <ViewTable/>
     </div>
   );
-}
+  }
 
 export default App;
